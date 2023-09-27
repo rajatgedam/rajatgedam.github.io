@@ -11,7 +11,7 @@ const Projects = () => {
           My <strong className={s.purple}>Work</strong>
         </h1>
         <p className={s.subtitle}>
-          Here are a few projects I've worked on.
+          Here are a few projects I've worked on ...
         </p>
 
         <ul className={s.projects}>
