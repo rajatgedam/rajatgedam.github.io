@@ -27,7 +27,7 @@ export const info = {
   miniBio: [
     {
       emoji: '✨',
-      text: 'Looking for exciting opportunities | Open to Work',
+      text: 'Looking for exciting opportunities',
     },{
       emoji: '🌎',
       text: 'Based in Boston, USA',
