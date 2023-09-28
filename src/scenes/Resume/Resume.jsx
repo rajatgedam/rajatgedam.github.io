@@ -10,8 +10,8 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const resumeLink =
-  'https://raw.githubusercontent.com/vsnaichuk/vsnaichuk/master/CV.pdf';
+const resumeLink = 'https://github.com/rajatgedam/rajatgedam.github.io/blob/a3a777b8b749f6f9e367730519c0f98c98835ca9/src/data/RajatGedamResume.pdf'
+  //'https://raw.githubusercontent.com/vsnaichuk/vsnaichuk/master/CV.pdf';
 
 const Resume = () => {
   const pdfWrapper = useRef(null);
