@@ -8,7 +8,7 @@ import {
 const DARK_LOCAL_STORAGE_KEY = 'dark';
 
 export const ThemeContext = createContext({
-  dark: true,
+  dark: false,
   toggle: () => {},
 });
 

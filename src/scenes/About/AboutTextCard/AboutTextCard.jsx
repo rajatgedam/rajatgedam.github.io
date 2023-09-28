@@ -10,7 +10,7 @@ const AboutTextCard = () => {
     <div className={s.card}>
       <p style={{ textAlign: 'justify' }}>
         {/* Hello again, I am{' '} */}
-        🚀 Open to Work, looking for new opportunities, willing to relocate. <br /> <br />
+        
         {/* <span className={s.purple}>Rajat Gedam</span> */}
         Based in <span className={s.purple}> Boston, USA, </span> 
         I'm a software engineer with expertise in full stack development{' '} 
@@ -28,9 +28,10 @@ const AboutTextCard = () => {
         I previously worked for Yardi Systems, Santa Barbara, developing a co-working space management platform. (2018 - 2021) 
         <br /><br />
         At Yardi Systems, I tailored end-to-end solutions, from creating database schemas, tables, and developing <span className={s.purple}>REST APIs</span> to designing web pages for these services. In the <span className={s.purple}>AGILE</span> environment, I worked on implementating and maintaining new features, fixing bugs, defects and actively took part in code reviews.
-        <br />
-        I used the frameworks .NET and Angular with tools such as <span className={s.purple}>Postman, Swagger, Confluence and JIRA</span> for the software development life cycle activites. 
         <br /><br />
+        I used the frameworks .NET and Angular with tools such as <span className={s.purple}>Postman, Swagger, Confluence and JIRA</span> for the software development life cycle activites at Yardi Systems. 
+        <br /><br />
+        🚀 I am looking for new opportunities and I'm willing to relocate. <br /> <br />
         Apart from coding, some other activities that I love to do!
       </p>
 
