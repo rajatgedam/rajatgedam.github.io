@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.6ab671e8.css",
-    "main.js": "/static/js/main.059e3deb.js",
+    "main.js": "/static/js/main.45e79277.js",
     "static/css/931.15fe69d6.chunk.css": "/static/css/931.15fe69d6.chunk.css",
     "static/js/931.74f5b9a4.chunk.js": "/static/js/931.74f5b9a4.chunk.js",
     "static/css/61.ddeb0517.chunk.css": "/static/css/61.ddeb0517.chunk.css",
-    "static/js/61.9874afc1.chunk.js": "/static/js/61.9874afc1.chunk.js",
+    "static/js/61.208c3827.chunk.js": "/static/js/61.208c3827.chunk.js",
     "static/css/531.33f19f4b.chunk.css": "/static/css/531.33f19f4b.chunk.css",
     "static/js/531.57e5fa8d.chunk.js": "/static/js/531.57e5fa8d.chunk.js",
     "static/css/5.b88aebe6.chunk.css": "/static/css/5.b88aebe6.chunk.css",
@@ -18,6 +18,7 @@
     "static/js/745.9697ac9b.chunk.js": "/static/js/745.9697ac9b.chunk.js",
     "static/js/477.f251bf62.chunk.js": "/static/js/477.f251bf62.chunk.js",
     "static/media/6_MovieRating.png": "/static/media/6_MovieRating.e99b0406b4a1696e425f.png",
+    "static/media/about-promo.svg": "/static/media/about-promo.f681e5b8c5ebb9047478f13cbe88a7f1.svg",
     "static/media/home-main.svg": "/static/media/home-main.19b82ef87b5ea8295dbd9aeadc47d4eb.svg",
     "static/media/3_AWS_IoT_Core.jpg": "/static/media/3_AWS_IoT_Core.f3f5c4efed13844061bd.jpg",
     "static/media/1_MSCapstone.png": "/static/media/1_MSCapstone.f8a55e6bf8c25c1fe660.png",
@@ -26,7 +27,6 @@
     "static/media/5_NetworkX.png": "/static/media/5_NetworkX.5f039e4a7e5a38627dcf.png",
     "service-worker.js": "/service-worker.js",
     "static/media/home-bg.jpg": "/static/media/home-bg.43a5db932e4ce89869ea.jpg",
-    "static/media/about-promo.svg": "/static/media/about-promo.f48cd37cb84b2e2b9e18859657326135.svg",
     "static/media/resume-files.svg": "/static/media/resume-files.9fb2ccdea7801292fa211d00d96899bd.svg",
     "static/media/avatar.svg": "/static/media/avatar.c717b1c16c09dcea6872177991a494c3.svg",
     "static/media/pre.svg": "/static/media/pre.845589e1c8eed2f2acc9.svg",
@@ -36,11 +36,11 @@
     "static/media/modal-close.svg": "/static/media/modal-close.f61e09ce39d6407ec77f2f5e76b29448.svg",
     "static/media/toggle-light.svg": "/static/media/toggle-light.28152a5f3e52dffa94604beebe634b9b.svg",
     "main.6ab671e8.css.map": "/static/css/main.6ab671e8.css.map",
-    "main.059e3deb.js.map": "/static/js/main.059e3deb.js.map",
+    "main.45e79277.js.map": "/static/js/main.45e79277.js.map",
     "931.15fe69d6.chunk.css.map": "/static/css/931.15fe69d6.chunk.css.map",
     "931.74f5b9a4.chunk.js.map": "/static/js/931.74f5b9a4.chunk.js.map",
     "61.ddeb0517.chunk.css.map": "/static/css/61.ddeb0517.chunk.css.map",
-    "61.9874afc1.chunk.js.map": "/static/js/61.9874afc1.chunk.js.map",
+    "61.208c3827.chunk.js.map": "/static/js/61.208c3827.chunk.js.map",
     "531.33f19f4b.chunk.css.map": "/static/css/531.33f19f4b.chunk.css.map",
     "531.57e5fa8d.chunk.js.map": "/static/js/531.57e5fa8d.chunk.js.map",
     "5.b88aebe6.chunk.css.map": "/static/css/5.b88aebe6.chunk.css.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.6ab671e8.css",
-    "static/js/main.059e3deb.js"
+    "static/js/main.45e79277.js"
   ]
 }
