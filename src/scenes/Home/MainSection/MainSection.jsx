@@ -23,10 +23,11 @@ const MainSection = () => {
 
         <div style={{ paddingTop: 50 }}>
           <Typewriter
-            strings={[
-              'Full Stack Developer     ◕‿↼ ',
-              'Web Developer      (ಠ‿ಠ) ',
-              'French Fries Lover     (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ '
+            strings={[ 
+              'Software Engineer',
+              'Full Stack Developer   ', //◕‿↼ 
+              'Web Developer  ', //(ಠ‿ಠ)              
+              'French Fries Lover ◕‿↼ ' //(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ 
             ]}
             wrapperClassName={s.typewriterWrapper}
             cursorClassName={s.typewriterCursor}
