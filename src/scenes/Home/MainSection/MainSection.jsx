@@ -21,7 +21,7 @@ const MainSection = () => {
           <strong className={s.mainName}> RAJAT GEDAM </strong>
         </h1>
 
-        <div style={{ paddingTop: 50 }}>
+        <div style={{ paddingTop: 50, height: '8.0em' }}>
           <Typewriter
             strings={[ 
               'Software Engineer',
@@ -31,8 +31,10 @@ const MainSection = () => {
             ]}
             wrapperClassName={s.typewriterWrapper}
             cursorClassName={s.typewriterCursor}
-          />
-          <Box component={'ul'} mt={'1rem'} p={'0.8rem'}>
+          />         
+        </div>
+        <div>
+        <Box component={'ul'} mt={'1rem'} p={'0.8rem'}>
           {info.miniBio.map((bio, index) => (
             <EmojiBullet key={index} emoji={bio.emoji} text={bio.text} />
           ))}
