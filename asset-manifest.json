@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.6ab671e8.css",
-    "main.js": "/static/js/main.cf8448d8.js",
+    "main.js": "/static/js/main.87a294e9.js",
     "static/css/931.15fe69d6.chunk.css": "/static/css/931.15fe69d6.chunk.css",
-    "static/js/931.77bf6a67.chunk.js": "/static/js/931.77bf6a67.chunk.js",
+    "static/js/931.c800aad0.chunk.js": "/static/js/931.c800aad0.chunk.js",
     "static/css/61.ddeb0517.chunk.css": "/static/css/61.ddeb0517.chunk.css",
     "static/js/61.cb275608.chunk.js": "/static/js/61.cb275608.chunk.js",
     "static/css/531.33f19f4b.chunk.css": "/static/css/531.33f19f4b.chunk.css",
@@ -36,9 +36,9 @@
     "static/media/modal-close.svg": "/static/media/modal-close.f61e09ce39d6407ec77f2f5e76b29448.svg",
     "static/media/toggle-light.svg": "/static/media/toggle-light.28152a5f3e52dffa94604beebe634b9b.svg",
     "main.6ab671e8.css.map": "/static/css/main.6ab671e8.css.map",
-    "main.cf8448d8.js.map": "/static/js/main.cf8448d8.js.map",
+    "main.87a294e9.js.map": "/static/js/main.87a294e9.js.map",
     "931.15fe69d6.chunk.css.map": "/static/css/931.15fe69d6.chunk.css.map",
-    "931.77bf6a67.chunk.js.map": "/static/js/931.77bf6a67.chunk.js.map",
+    "931.c800aad0.chunk.js.map": "/static/js/931.c800aad0.chunk.js.map",
     "61.ddeb0517.chunk.css.map": "/static/css/61.ddeb0517.chunk.css.map",
     "61.cb275608.chunk.js.map": "/static/js/61.cb275608.chunk.js.map",
     "531.33f19f4b.chunk.css.map": "/static/css/531.33f19f4b.chunk.css.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.6ab671e8.css",
-    "static/js/main.cf8448d8.js"
+    "static/js/main.87a294e9.js"
   ]
 }
