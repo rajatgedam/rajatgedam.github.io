@@ -28,27 +28,27 @@ const IntroSection = () => {
             </p>
             <p>{info.bio}</p>
             <p>
-              My skills include proficiency in{' '}
+              {/*My skills include proficiency in{' '}
               <i>
                 <b className={s.purple}>
                   C/C++, C# .NET, Java, Python, JavaScript, TypeScript, SQL, React JS, React Native, Angular,
                 </b>
               </i>
               <br />
-              {/* <i>
+               <i>
                 <b className={s.purple}>
                 React JS, React Native, Angular, 
                 </b>
               </i>
               <br /> */}
-              and other relevant technologies. I have experience in integrating various third-party libraries, API development & integration with front end development.
+              C/C++, C# .NET, Java, Python, JavaScript, TypeScript, SQL, React JS, React Native, Angular, and other relevant technologies. I have experience in integrating various third-party libraries, API development & integration with front end development.
             </p>
 
             <p>
-              My field of interests are building new
-              <i>
+              My field of interests are building new Cloud based Products and Web Platforms.
+              {/* <i>
                 <b className={s.purple}> Cloud based Products and Web Platforms</b>
-              </i>
+              </i> */}
             </p>
           </div>
         </div>

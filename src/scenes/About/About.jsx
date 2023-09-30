@@ -12,7 +12,7 @@ const About = () => {
         <div className={s.about}>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
-              Well, keep talking <b className={s.purple}>Rajat ...</b>
+              Well, keep talking <b className={s.purple}>Rajat...</b>
             </h1>
             <AboutTextCard />
           </div>
