@@ -22,12 +22,12 @@ const IntroSection = () => {
             {/* MYSELF */}
           </h1>
 
-          <div className={s.description}>
-            <p>
+          <div className={s.description} >
+            <p style={{flex: 1, flexWrap: 'wrap'}}>
               A Full Stack Developer with 4 years of industry experience creating Cloud Web Applications.
             </p>
             <p>{info.bio}</p>
-            <p>
+            <p style={{flex: 1, flexWrap: 'wrap'}}>
               {/*My skills include proficiency in{' '}
               <i>
                 <b className={s.purple}>
