@@ -80,6 +80,8 @@ export const info = {
   ],
 
   bio: "I'm a dedicated software engineer with a background in SaaS, known for my exceptional communication and organizational skills. I enjoy contributing to innovative solutions that can positively impact both the organization and the people it serves. ",
+  skillsDesc: "C/C++, C# .NET, Java, Python, JavaScript, TypeScript, SQL, Angular, React JS, React Native,",
+  
   skills: {
     proficientWith: [
       'javascript',
