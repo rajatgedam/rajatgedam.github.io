@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.6ab671e8.css",
-    "main.js": "/static/js/main.aa0c5a49.js",
+    "main.js": "/static/js/main.73950425.js",
     "static/css/766.f4e773ab.chunk.css": "/static/css/766.f4e773ab.chunk.css",
     "static/js/766.6c154faf.chunk.js": "/static/js/766.6c154faf.chunk.js",
     "static/css/61.ddeb0517.chunk.css": "/static/css/61.ddeb0517.chunk.css",
-    "static/js/61.cb275608.chunk.js": "/static/js/61.cb275608.chunk.js",
+    "static/js/61.f44785d8.chunk.js": "/static/js/61.f44785d8.chunk.js",
     "static/css/531.33f19f4b.chunk.css": "/static/css/531.33f19f4b.chunk.css",
     "static/js/531.57e5fa8d.chunk.js": "/static/js/531.57e5fa8d.chunk.js",
     "static/css/5.b88aebe6.chunk.css": "/static/css/5.b88aebe6.chunk.css",
@@ -36,11 +36,11 @@
     "static/media/modal-close.svg": "/static/media/modal-close.f61e09ce39d6407ec77f2f5e76b29448.svg",
     "static/media/toggle-light.svg": "/static/media/toggle-light.28152a5f3e52dffa94604beebe634b9b.svg",
     "main.6ab671e8.css.map": "/static/css/main.6ab671e8.css.map",
-    "main.aa0c5a49.js.map": "/static/js/main.aa0c5a49.js.map",
+    "main.73950425.js.map": "/static/js/main.73950425.js.map",
     "766.f4e773ab.chunk.css.map": "/static/css/766.f4e773ab.chunk.css.map",
     "766.6c154faf.chunk.js.map": "/static/js/766.6c154faf.chunk.js.map",
     "61.ddeb0517.chunk.css.map": "/static/css/61.ddeb0517.chunk.css.map",
-    "61.cb275608.chunk.js.map": "/static/js/61.cb275608.chunk.js.map",
+    "61.f44785d8.chunk.js.map": "/static/js/61.f44785d8.chunk.js.map",
     "531.33f19f4b.chunk.css.map": "/static/css/531.33f19f4b.chunk.css.map",
     "531.57e5fa8d.chunk.js.map": "/static/js/531.57e5fa8d.chunk.js.map",
     "5.b88aebe6.chunk.css.map": "/static/css/5.b88aebe6.chunk.css.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.6ab671e8.css",
-    "static/js/main.aa0c5a49.js"
+    "static/js/main.73950425.js"
   ]
 }
