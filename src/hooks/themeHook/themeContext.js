@@ -5,7 +5,7 @@ import {
   useState,
 } from 'react';
 
-const DARK_LOCAL_STORAGE_KEY = 'dark';
+const DARK_LOCAL_STORAGE_KEY = 'light'; //change while setting default
 
 export const ThemeContext = createContext({
   dark: false,
@@ -13,7 +13,7 @@ export const ThemeContext = createContext({
 });
 
 export const ThemeProvider = ({ children }) => {
-  const [dark, setDark] = useState(true); // dark by default
+  const [dark, setDark] = useState(false); // dark by default if true
 
   const toggleTheme = useCallback(() => {
     setDark((prevDark) => {
@@ -35,8 +35,7 @@ export const ThemeProvider = ({ children }) => {
     );
 
     if (localValue === null) {
-      document.body.classList.add('dark');
-    } else {
+      document.body.classList.add('light'); //change while setting default
       setDark(localValue);
       document.body.classList.add(localValue ? 'dark' : 'light');
     }

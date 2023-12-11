@@ -34,7 +34,7 @@ export const info = {
     },
     {
       emoji: '💼',
-      text: 'Software Lead at SMAST',
+      text: 'Software Engineer at SMAST',
     },
     {
       emoji: '🎓',
