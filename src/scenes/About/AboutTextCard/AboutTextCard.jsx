@@ -18,14 +18,14 @@ const AboutTextCard = () => {
         <br />
 
         <br />
-        I have successfully identified and resolved complex issues, often working collaboratively with team members to develop creative solutions that deliver results.🎯 
+        I have successfully identified and resolved complex issues 🎯, often working collaboratively with team members to develop creative solutions that deliver results. 
         <br />
         <br />
         I have a Master's degree in Computer Science and I am currently working as a Software Engineer at UMass SMAST (Dean's Office). 🐳 
         <br /><br /> Currently, I am building a web application for tracking student degree progress. The back-end is facilitated with stored procedures on a Microsoft SQL Server. 
         The primary purpose of this application is reduce paperwork for the administrative team and reduce redunduncy in the data.📎
         <br /><br />
-        Implemented AI with Power BI to generate analytics and reports from graduate program data resulting in bird's eye view reports of all the students' current progress.
+        Implemented AI 🤖 with Power BI to generate analytics 📊 and reports from graduate program data resulting in bird's eye view reports of all the students' current progress. 
         <br /><br />
         I previously worked for Yardi Systems, Santa Barbara, developing a co-working space management platform. (2018 - 2021) 
         <br /><br />
