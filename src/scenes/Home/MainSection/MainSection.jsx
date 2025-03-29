@@ -13,7 +13,7 @@ const MainSection = () => {
     <section className={s.content}>
       <div className={s.header}>
         <h2 style={{ paddingBottom: 15 }} className={s.title}>
-          Hi There! <span className={s.wave}>👋🏻</span>
+          Hello There! <span className={s.wave}>👋🏻</span>
         </h2>
 
         <h1 className={s.mainTitle}>
