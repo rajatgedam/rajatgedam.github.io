@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.981a5148.css",
-    "main.js": "/static/js/main.fe48913f.js",
+    "main.js": "/static/js/main.3029a3ac.js",
     "static/css/460.f623dfff.chunk.css": "/static/css/460.f623dfff.chunk.css",
-    "static/js/460.8b236955.chunk.js": "/static/js/460.8b236955.chunk.js",
+    "static/js/460.9c12c0e8.chunk.js": "/static/js/460.9c12c0e8.chunk.js",
     "static/css/498.c75b25ad.chunk.css": "/static/css/498.c75b25ad.chunk.css",
-    "static/js/498.e3d2af6a.chunk.js": "/static/js/498.e3d2af6a.chunk.js",
+    "static/js/498.a5beafb8.chunk.js": "/static/js/498.a5beafb8.chunk.js",
     "static/css/453.825cbd62.chunk.css": "/static/css/453.825cbd62.chunk.css",
     "static/js/453.6799b5f5.chunk.js": "/static/js/453.6799b5f5.chunk.js",
     "static/css/5.c09e42d2.chunk.css": "/static/css/5.c09e42d2.chunk.css",
@@ -35,11 +35,11 @@
     "static/media/modal-close.svg": "/static/media/modal-close.f61e09ce39d6407ec77f2f5e76b29448.svg",
     "static/media/toggle-light.svg": "/static/media/toggle-light.28152a5f3e52dffa94604beebe634b9b.svg",
     "main.981a5148.css.map": "/static/css/main.981a5148.css.map",
-    "main.fe48913f.js.map": "/static/js/main.fe48913f.js.map",
+    "main.3029a3ac.js.map": "/static/js/main.3029a3ac.js.map",
     "460.f623dfff.chunk.css.map": "/static/css/460.f623dfff.chunk.css.map",
-    "460.8b236955.chunk.js.map": "/static/js/460.8b236955.chunk.js.map",
+    "460.9c12c0e8.chunk.js.map": "/static/js/460.9c12c0e8.chunk.js.map",
     "498.c75b25ad.chunk.css.map": "/static/css/498.c75b25ad.chunk.css.map",
-    "498.e3d2af6a.chunk.js.map": "/static/js/498.e3d2af6a.chunk.js.map",
+    "498.a5beafb8.chunk.js.map": "/static/js/498.a5beafb8.chunk.js.map",
     "453.825cbd62.chunk.css.map": "/static/css/453.825cbd62.chunk.css.map",
     "453.6799b5f5.chunk.js.map": "/static/js/453.6799b5f5.chunk.js.map",
     "5.c09e42d2.chunk.css.map": "/static/css/5.c09e42d2.chunk.css.map",
@@ -53,6 +53,6 @@
   },
   "entrypoints": [
     "static/css/main.981a5148.css",
-    "static/js/main.fe48913f.js"
+    "static/js/main.3029a3ac.js"
   ]
 }
