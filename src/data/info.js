@@ -30,7 +30,7 @@ export const info = {
       text: 'Looking for exciting opportunities',
     },{
       emoji: '🌎',
-      text: 'Based in PHX, USA',
+      text: 'Based in PHX, AZ',
     },
     {
       emoji: '💼',
@@ -80,7 +80,7 @@ export const info = {
   ],
 
   bio: "I'm a dedicated software engineer with a background in SaaS, known for my exceptional communication and organizational skills. I enjoy contributing to innovative solutions that can positively impact both the organization and the people it serves. Most recently, I had the privilege of making a meaningful impact on homeless communities in California, driving positive transformation and lasting change with my software wizardy. Curious?",
-  skillsDesc: "C/C++, C# .NET, Java, Python, JavaScript, TypeScript, SQL, Angular, React JS, React Native",
+  skillsDesc: "C/C++, C# .NET, Java, Python, JavaScript, TypeScript, SQL, Angular, React JS, React Native, Blazor",
   
   skills: {
     proficientWith: [
