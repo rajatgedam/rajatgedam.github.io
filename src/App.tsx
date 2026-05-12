@@ -5,6 +5,7 @@ import { BackgroundParticles } from './components/BackgroundParticles'
 import { Section } from './components/common/Section'
 import { AboutSection } from './components/sections/AboutSection'
 import { ExperienceSection } from './components/sections/ExperienceSection'
+import { FunSection } from './components/sections/FunSection'
 import { ProjectsSection } from './components/sections/ProjectsSection'
 import { experience } from './data/experience'
 import { profile } from './data/profile'
@@ -15,6 +16,7 @@ const navItems = [
   { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
+  { id: 'fun', label: 'Fun' },
   { id: 'contact', label: 'Contact' },
 ]
 
@@ -155,6 +157,7 @@ function App() {
         <AboutSection profile={profile} />
         <ExperienceSection items={experience} />
         <ProjectsSection items={projects} />
+        <FunSection />
 
         <Section id="contact" kicker="Contact" title="Let us connect">
           <motion.div className="contact-grid" {...fadeInUp}>

@@ -370,6 +370,31 @@ main {
   max-width: 58ch;
 }
 
+.fun-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.fun-card {
+  padding: 0.8rem;
+}
+
+.fun-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(126, 225, 213, 0.35);
+  background: radial-gradient(circle at 20% 10%, rgba(117, 225, 213, 0.1), transparent 35%),
+    rgba(6, 18, 40, 0.85);
+  touch-action: manipulation;
+}
+
+.fun-meta h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
 .contact-links {
   margin-top: 0.95rem;
   display: flex;
@@ -422,6 +447,11 @@ main {
 
   .about-grid {
     grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .fun-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
   }
 
   .timeline-grid,
