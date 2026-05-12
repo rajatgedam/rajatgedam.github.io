@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="aboutTitle aboutDesc">
+  <title id="aboutTitle">2026 about illustration preview</title>
+  <desc id="aboutDesc">A contemporary systems and collaboration illustration showing product strategy, engineering delivery, cloud architecture, and AI-enabled workflows.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#041022" />
+      <stop offset="55%" stop-color="#0a1834" />
+      <stop offset="100%" stop-color="#0f2953" />
+    </linearGradient>
+    <radialGradient id="mintGlow" cx="80%" cy="20%" r="48%">
+      <stop offset="0%" stop-color="#75e1d5" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#75e1d5" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="16%" cy="24%" r="52%">
+      <stop offset="0%" stop-color="#75a8ff" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#75a8ff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="stroke2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8bb6ff" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#75e1d5" stop-opacity="0.18" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#010710" flood-opacity="0.42" />
+    </filter>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#d9e8ff" fill-opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#bg2)" />
+  <rect width="1200" height="900" rx="36" fill="url(#dots)" />
+  <circle cx="220" cy="210" r="260" fill="url(#blueGlow)" />
+  <circle cx="960" cy="190" r="240" fill="url(#mintGlow)" />
+
+  <g filter="url(#softShadow)">
+    <rect x="106" y="108" width="988" height="684" rx="36" fill="#07152d" fill-opacity="0.72" stroke="url(#stroke2)" stroke-width="2" />
+
+    <text x="160" y="190" fill="#75e1d5" font-size="15" font-family="'Space Grotesk', sans-serif" letter-spacing="2">ABOUT SYSTEMS THINKING</text>
+    <text x="160" y="240" fill="#e9f2ff" font-size="42" font-family="'Space Grotesk', sans-serif">Product-minded engineering</text>
+    <text x="160" y="284" fill="#adc3e8" font-size="18" font-family="'Space Grotesk', sans-serif">Clear problem framing, resilient implementation, and measurable delivery across enterprise and AI-native systems.</text>
+
+    <rect x="160" y="340" width="356" height="390" rx="30" fill="#0c1b33" fill-opacity="0.94" stroke="#75a8ff" stroke-opacity="0.22" />
+    <text x="194" y="388" fill="#e9f2ff" font-size="24" font-family="'Space Grotesk', sans-serif">Delivery model</text>
+
+    <g font-family="'Space Grotesk', sans-serif">
+      <circle cx="220" cy="446" r="14" fill="#75e1d5" />
+      <text x="252" y="452" fill="#e9f2ff" font-size="18">Stakeholder alignment</text>
+      <text x="252" y="476" fill="#adc3e8" font-size="13">translate goals into software scope</text>
+
+      <circle cx="220" cy="534" r="14" fill="#75a8ff" />
+      <text x="252" y="540" fill="#e9f2ff" font-size="18">Architecture and UX</text>
+      <text x="252" y="564" fill="#adc3e8" font-size="13">system design with practical interfaces</text>
+
+      <circle cx="220" cy="622" r="14" fill="#ffd48b" />
+      <text x="252" y="628" fill="#e9f2ff" font-size="18">Operational follow-through</text>
+      <text x="252" y="652" fill="#adc3e8" font-size="13">testing, telemetry, release discipline</text>
+    </g>
+
+    <rect x="560" y="340" width="488" height="172" rx="30" fill="#0c1b33" fill-opacity="0.94" stroke="#75e1d5" stroke-opacity="0.22" />
+    <text x="596" y="388" fill="#e9f2ff" font-size="24" font-family="'Space Grotesk', sans-serif">Core practice areas</text>
+
+    <g font-family="'Space Grotesk', sans-serif" font-size="15">
+      <rect x="596" y="422" width="126" height="38" rx="19" fill="#11294d" />
+      <text x="626" y="446" fill="#75e1d5">Cloud-native</text>
+      <rect x="736" y="422" width="122" height="38" rx="19" fill="#11294d" />
+      <text x="769" y="446" fill="#75a8ff">Full stack</text>
+      <rect x="872" y="422" width="136" height="38" rx="19" fill="#11294d" />
+      <text x="912" y="446" fill="#ffd48b">AI workflows</text>
+    </g>
+
+    <rect x="560" y="542" width="488" height="188" rx="30" fill="#0c1b33" fill-opacity="0.94" stroke="#75a8ff" stroke-opacity="0.22" />
+    <text x="596" y="590" fill="#e9f2ff" font-size="24" font-family="'Space Grotesk', sans-serif">Systems map</text>
+
+    <g stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M 642 650 C 702 606, 772 604, 836 640" stroke="#75e1d5" stroke-opacity="0.5" />
+      <path d="M 836 640 C 882 664, 926 664, 972 636" stroke="#75a8ff" stroke-opacity="0.5" />
+      <path d="M 702 606 C 762 558, 834 558, 900 604" stroke="#ffd48b" stroke-opacity="0.45" />
+    </g>
+
+    <g font-family="'Space Grotesk', sans-serif">
+      <circle cx="642" cy="650" r="26" fill="#11294d" stroke="#75e1d5" stroke-opacity="0.45" />
+      <text x="618" y="655" fill="#e9f2ff" font-size="12">users</text>
+      <circle cx="836" cy="640" r="30" fill="#11294d" stroke="#75a8ff" stroke-opacity="0.45" />
+      <text x="806" y="645" fill="#e9f2ff" font-size="12">product</text>
+      <circle cx="972" cy="636" r="26" fill="#11294d" stroke="#ffd48b" stroke-opacity="0.45" />
+      <text x="946" y="641" fill="#e9f2ff" font-size="12">cloud</text>
+      <circle cx="900" cy="604" r="24" fill="#11294d" stroke="#75e1d5" stroke-opacity="0.45" />
+      <text x="878" y="609" fill="#e9f2ff" font-size="12">agents</text>
+      <circle cx="702" cy="606" r="24" fill="#11294d" stroke="#75a8ff" stroke-opacity="0.45" />
+      <text x="676" y="611" fill="#e9f2ff" font-size="12">data</text>
+    </g>
+  </g>
+
+  <g opacity="0.9" font-family="'Space Grotesk', sans-serif">
+    <text x="108" y="838" fill="#adc3e8" font-size="16">Draft concept: fewer generic AI tropes, more product systems, collaboration, and modern enterprise signal.</text>
+  </g>
+</svg>

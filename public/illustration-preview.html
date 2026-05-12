@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illustration Preview</title>
+    <style>
+      :root {
+        --bg-900: #020814;
+        --bg-800: #07132b;
+        --bg-700: #0b1f42;
+        --panel: rgba(9, 26, 56, 0.76);
+        --panel-border: rgba(129, 183, 255, 0.24);
+        --text-main: #e9f2ff;
+        --text-soft: #adc3e8;
+        --brand: #75a8ff;
+        --brand-2: #75e1d5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text-main);
+        background:
+          radial-gradient(80vw 55vw at 85% -10%, rgba(117, 168, 255, 0.24), transparent 60%),
+          radial-gradient(90vw 65vw at -5% 15%, rgba(126, 225, 213, 0.13), transparent 55%),
+          linear-gradient(160deg, var(--bg-900), var(--bg-800) 42%, var(--bg-700));
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+      }
+
+      main {
+        width: min(1200px, 92vw);
+        margin: 0 auto;
+        padding: 48px 0 64px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        margin: 0;
+        color: var(--text-soft);
+        line-height: 1.6;
+      }
+
+      .intro {
+        margin-bottom: 28px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        padding: 18px;
+        border: 1px solid var(--panel-border);
+        border-radius: 22px;
+        background: var(--panel);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+      }
+
+      .eyebrow {
+        margin-bottom: 8px;
+        color: var(--brand-2);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.76rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 1.3rem;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 16px;
+        border-radius: 20px;
+        border: 1px solid rgba(129, 183, 255, 0.18);
+        background: rgba(3, 12, 24, 0.7);
+      }
+
+      @media (min-width: 960px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Draft Preview</p>
+      <h1>2026 illustration direction</h1>
+      <p class="intro">These are preview-only replacements for the current hero and about illustrations. They intentionally drop the older generic AI imagery in favor of product systems, cloud delivery, interface language, and human-guided workflows.</p>
+
+      <section class="grid">
+        <article class="card">
+          <p class="eyebrow">Home</p>
+          <h2>Hero illustration draft</h2>
+          <p>Focuses on agent workflows, modern dashboards, delivery telemetry, and a sharper enterprise product feel.</p>
+          <img src="/assets/illustrations/home-main-2026-preview.svg" alt="2026 hero illustration preview" />
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">About</p>
+          <h2>About illustration draft</h2>
+          <p>Focuses on systems thinking, stakeholder alignment, cloud architecture, and AI-enabled product delivery without cliché robot motifs.</p>
+          <img src="/assets/illustrations/about-promo-2026-preview.svg" alt="2026 about illustration preview" />
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
