@@ -18,7 +18,7 @@ export const profile: Profile = {
     'At Yardi, I built and optimized REST APIs, modernized Angular user flows, automated migration tasks, and improved SaaS reliability and performance in agile global teams.',
   ],
   email: 'rajatgedam96@gmail.com',
-  phone: '+17745261933',
+  phone: '',
   socials: [
     {
       id: 'github',
