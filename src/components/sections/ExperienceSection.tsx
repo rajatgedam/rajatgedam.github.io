@@ -13,6 +13,7 @@ export function ExperienceSection({ items }: ExperienceSectionProps) {
       id="experience"
       kicker="Experience"
       title="Where I have delivered impact"
+      titleHint="Add new experience entries in src/data/experience.ts and this section updates automatically."
     >
       <div className="timeline-grid">
         {items.map((item, index) => (
