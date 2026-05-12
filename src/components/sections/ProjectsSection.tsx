@@ -24,7 +24,6 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
       id="projects"
       kicker="Projects"
       title="Selected engineering work"
-      subtitle="Add project objects in src/data/projects.ts to publish new cards without UI changes."
     >
       {hasArchived ? (
         <div className="section-actions">

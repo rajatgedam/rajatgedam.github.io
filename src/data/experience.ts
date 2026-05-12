@@ -2,7 +2,7 @@ import type { ExperienceItem } from '../types/portfolio'
 
 export const experience: ExperienceItem[] = [
   {
-    id: 'deloitte',
+    id: 'deloitte', 
     role: 'Software Engineer (.NET 8, Blazor, Postgres, Docker)',
     company: 'Deloitte - Department of Healthcare Services (DHCS)',
     period: 'Apr 2024 - Present',
@@ -15,7 +15,7 @@ export const experience: ExperienceItem[] = [
       'Leveraged GitHub Copilot for AI-assisted code analysis and automated review bot workflows, accelerating pull request throughput and code delivery — consistent with GitHub\'s published benchmark of 46% more code shipped per developer and 55% faster task completion.',
     ],
     tools: [
-      '.NET 8',
+      '.NET 9+',
       'Blazor',
       'PostgreSQL',
       'Docker',
