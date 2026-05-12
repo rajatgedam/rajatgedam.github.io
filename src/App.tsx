@@ -32,26 +32,72 @@ function App() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
-    const sectionIds = navItems.map((item) => item.id)
-    const sections = sectionIds
-      .map((id) => document.getElementById(id))
+    const sections = navItems
+      .map((item) => document.getElementById(item.id))
       .filter((node): node is HTMLElement => Boolean(node))
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+    if (!sections.length) {
+      return
+    }
 
-        if (visible.length > 0) {
-          setActiveSection(visible[0].target.id)
-        }
-      },
-      { rootMargin: '-35% 0px -55% 0px', threshold: [0.2, 0.5, 0.8] },
-    )
+    let ticking = false
 
-    sections.forEach((section) => observer.observe(section))
-    return () => observer.disconnect()
+    const detectActiveSection = () => {
+      const headerOffset = 110
+
+      // Prefer the section currently crossing the top content boundary.
+      const crossing = sections.find((section) => {
+        const rect = section.getBoundingClientRect()
+        return rect.top <= headerOffset && rect.bottom > headerOffset
+      })
+
+      if (crossing) {
+        setActiveSection(crossing.id)
+        return
+      }
+
+      // Fallback to the nearest section top currently in view.
+      const nearest = sections
+        .map((section) => {
+          const rect = section.getBoundingClientRect()
+          return { id: section.id, distance: Math.abs(rect.top - headerOffset) }
+        })
+        .sort((a, b) => a.distance - b.distance)[0]
+
+      if (nearest) {
+        setActiveSection(nearest.id)
+      }
+    }
+
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true
+        requestAnimationFrame(() => {
+          detectActiveSection()
+          ticking = false
+        })
+      }
+    }
+
+    const onHashChange = () => {
+      const id = window.location.hash.replace('#', '')
+      if (id && navItems.some((item) => item.id === id)) {
+        setActiveSection(id)
+      }
+    }
+
+    detectActiveSection()
+    onHashChange()
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    window.addEventListener('hashchange', onHashChange)
+
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+      window.removeEventListener('hashchange', onHashChange)
+    }
   }, [])
 
   const socialIcons = useMemo(
@@ -77,6 +123,7 @@ function App() {
               key={item.id}
               href={`#${item.id}`}
               className={activeSection === item.id ? 'nav-link active' : 'nav-link'}
+              onClick={() => setActiveSection(item.id)}
             >
               {item.label}
             </a>
@@ -109,7 +156,10 @@ function App() {
                 key={item.id}
                 href={`#${item.id}`}
                 className={activeSection === item.id ? 'nav-link active' : 'nav-link'}
-                onClick={() => setMobileOpen(false)}
+                onClick={() => {
+                  setActiveSection(item.id)
+                  setMobileOpen(false)
+                }}
               >
                 {item.label}
               </a>
