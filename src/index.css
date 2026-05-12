@@ -379,6 +379,13 @@ main {
   padding: 0.8rem;
 }
 
+.fun-game-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
 .fun-canvas {
   width: 100%;
   height: auto;
@@ -390,9 +397,84 @@ main {
   touch-action: manipulation;
 }
 
+.fun-canvas-inactive {
+  opacity: 0.68;
+}
+
 .fun-meta h3 {
   font-size: 1.05rem;
   margin-bottom: 0.35rem;
+}
+
+.fun-meta {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.fun-mode-copy {
+  margin-top: -0.15rem;
+}
+
+.fun-stats {
+  border: 1px solid rgba(117, 168, 255, 0.25);
+  border-radius: 0.85rem;
+  padding: 0.55rem 0.7rem;
+  background: rgba(9, 24, 51, 0.55);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.fun-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.fun-stat-label {
+  color: var(--text-soft);
+  font-size: 0.84rem;
+}
+
+.fun-stat-value {
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.fun-status-pill {
+  font-size: 0.74rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+}
+
+.fun-status-idle {
+  color: #d9e7ff;
+  background: rgba(129, 183, 255, 0.18);
+  border: 1px solid rgba(129, 183, 255, 0.38);
+}
+
+.fun-status-ready {
+  color: #d8f7f2;
+  background: rgba(117, 225, 213, 0.16);
+  border: 1px solid rgba(117, 225, 213, 0.36);
+}
+
+.fun-status-running {
+  color: #e6f9d8;
+  background: rgba(163, 237, 123, 0.16);
+  border: 1px solid rgba(163, 237, 123, 0.38);
+}
+
+.fun-status-over {
+  color: #ffe2d1;
+  background: rgba(255, 148, 116, 0.18);
+  border: 1px solid rgba(255, 148, 116, 0.4);
+}
+
+.fun-rules {
+  margin-top: 0.2rem;
 }
 
 .contact-links {
