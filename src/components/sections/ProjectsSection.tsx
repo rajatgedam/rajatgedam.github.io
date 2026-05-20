@@ -26,18 +26,6 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
       title="Selected engineering work"
       titleHint="Add project objects in src/data/projects.ts to publish new cards without UI changes."
     >
-      {hasArchived ? (
-        <div className="section-actions">
-          <button
-            type="button"
-            className="btn btn-secondary"
-            onClick={() => setShowArchived((prev) => !prev)}
-          >
-            {showArchived ? 'Hide Archived Projects' : 'Show Archived Projects'}
-          </button>
-        </div>
-      ) : null}
-
       <div className="project-grid">
         {visibleItems.map((project, index) => (
           <motion.article
@@ -83,6 +71,18 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
           </motion.article>
         ))}
       </div>
+
+      {hasArchived ? (
+        <div className="section-actions">
+          <button
+            type="button"
+            className="btn btn-secondary"
+            onClick={() => setShowArchived((prev) => !prev)}
+          >
+            {showArchived ? 'Hide Archived Projects' : 'Show Archived Projects'}
+          </button>
+        </div>
+      ) : null}
     </Section>
   )
 }
