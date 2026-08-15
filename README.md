@@ -36,7 +36,6 @@ The current site includes:
 - React 19
 - TypeScript 6
 - Vite 8
-- Tailwind CSS 4 via the Vite plugin
 - Framer Motion
 - tsParticles
 - Lucide React
@@ -77,9 +76,9 @@ The site is intentionally data-driven. Most portfolio updates should be made in 
 The site currently reflects:
 
 - Updated professional summary aligned with the latest resume
-- Experience at Deloitte, University of Massachusetts, and Yardi Systems
-- AI File Sorter and AI Chat Bot as current highlighted projects
-- Archived academic and earlier portfolio projects behind a toggle
+- Experience at Deloitte (Senior Software Engineer), University of Massachusetts, and Yardi Systems
+- AI Delivery Copilot and ResumeForge as current highlighted projects
+- AI File Sorter and AI Chat Bot moved to archived projects behind a toggle
 - Resume asset exposed at `/assets/resume/RajatGedamResume.pdf`
 
 ## Local Development

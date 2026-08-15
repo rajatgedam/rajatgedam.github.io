@@ -41,7 +41,14 @@ export function AboutSection({ profile }: AboutSectionProps) {
             />
           </div>
           <h3>Core Skills</h3>
-          <TagList tags={profile.skills} />
+          <div className="skill-groups">
+            {profile.skills.map((group) => (
+              <div key={group.category} className="skill-group">
+                <p className="skill-group-label">{group.category}</p>
+                <TagList tags={group.items} />
+              </div>
+            ))}
+          </div>
         </div>
       </motion.div>
     </Section>

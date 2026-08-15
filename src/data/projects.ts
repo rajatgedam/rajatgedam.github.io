@@ -2,8 +2,27 @@ import type { ProjectItem } from '../types/portfolio'
 
 export const projects: ProjectItem[] = [
   {
+    id: 'ai-delivery-copilot',
+    title: 'AI Delivery Copilot',
+    description:
+      'Production AI planning platform that converts product notes and repo context into sprint objectives, stories, and QA checklists with approval-gated exports, cutting plan-to-ticket turnaround by 70% and tripling sprint-ready artifact throughput.',
+    image: '/assets/projects/coming-soon.svg',
+    repo: 'https://github.com/rajatgedam/ai-delivery-copilot',
+    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS Bedrock'],
+  },
+  {
+    id: 'resumeforge',
+    title: 'ResumeForge',
+    description:
+      'Retrieval-augmented resume-tailoring platform with ATS scoring and factuality-aware rewriting, cutting tailoring time from ~2 hours to under 20 minutes and improving keyword-match coverage by 35%.',
+    image: '/assets/projects/coming-soon.svg',
+    repo: 'https://github.com/rajatgedam/kuku',
+    technologies: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'AWS Bedrock', 'RAG'],
+  },
+  {
     id: 'ai-file-sorter',
     title: 'AI File Sorter',
+    archived: true,
     period: 'Apr 2026 - May 2026',
     description:
       'AI-powered file organization desktop app that scans folders, proposes smart groupings with a local Ollama model, supports approve/reject review, conflict-safe moves, and one-click undo.',
@@ -22,6 +41,7 @@ export const projects: ProjectItem[] = [
   {
     id: 'ai-chat-bot',
     title: 'AI Chat Bot (NexusChat)',
+    archived: true,
     period: 'Apr 2026 - May 2026',
     description:
       'Full-stack chat application with persistent PostgreSQL sessions, multi-session sidebar workflow, Hugging Face LLM integration, context memory, and token/limit telemetry in the UI.',

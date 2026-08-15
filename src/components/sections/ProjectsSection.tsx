@@ -24,7 +24,6 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
       id="projects"
       kicker="Projects"
       title="Selected engineering work"
-      titleHint="Add project objects in src/data/projects.ts to publish new cards without UI changes."
     >
       <div className="project-grid">
         {visibleItems.map((project, index) => (

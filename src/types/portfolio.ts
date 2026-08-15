@@ -4,6 +4,11 @@ export interface SocialLink {
   url: string
 }
 
+export interface SkillGroup {
+  category: string
+  items: string[]
+}
+
 export interface Profile {
   name: string
   headline: string
@@ -13,7 +18,7 @@ export interface Profile {
   email: string
   phone?: string
   socials: SocialLink[]
-  skills: string[]
+  skills: SkillGroup[]
   contactMessage: string
   resumeUrl: string
 }
