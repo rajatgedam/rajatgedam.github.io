@@ -18,7 +18,7 @@ export const profile: Profile = {
     'At Yardi, I refactored SaaS APIs in C# .NET to achieve 80% code reuse and cut latency from 50ms to 37.5ms, built full-stack applications on AWS for real estate data systems reaching 99.99% uptime, and automated legacy data migrations that saved 40+ hours per month.',
   ],
   email: 'rajatgedam96@gmail.com',
-  phone: '+17745261933',
+  phone: '',
   socials: [
     {
       id: 'github',
