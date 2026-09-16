@@ -32,14 +32,6 @@ export function AboutSection({ profile }: AboutSectionProps) {
         </div>
 
         <div className="panel about-side">
-          <div className="about-illustration-wrap">
-            <img
-              src="/assets/illustrations/about-promo.svg"
-              alt="Illustration representing collaboration and modern software delivery"
-              className="about-illustration"
-              loading="lazy"
-            />
-          </div>
           <h3>Core Skills</h3>
           <div className="skill-groups">
             {profile.skills.map((group) => (

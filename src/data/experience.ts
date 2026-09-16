@@ -3,18 +3,18 @@ import type { ExperienceItem } from '../types/portfolio'
 export const experience: ExperienceItem[] = [
   {
     id: 'deloitte',
-    role: 'Senior Software Engineer (C# .NET 8, React, AWS Bedrock, PostgreSQL, Docker)',
+    role: 'Software Engineer (C# .NET 8, Python, TypeScript, AWS Bedrock, Amazon Aurora, Docker)',
     company: 'Deloitte - Government of California State',
     period: 'Jun 2024 - Present',
     location: 'Sacramento, CA (Remote)',
     summary: [
-      'Architected a customer-facing AI chatbot on AWS Bedrock with retrieval-augmented generation (RAG) over live task data, letting users query pending tasks and retrieve status in natural language, reducing manual lookup time and support ticket volume.',
+      'Users needed plain-language answers about pending tasks instead of manual lookups, so built a RAG chatbot on AWS Bedrock — Python for retrieval, Amazon Aurora with pgvector for similarity search, TypeScript/React for the front end. Cut related support tickets.',
       'Addressed scalability limits across 30+ ERP/SaaS integrations, architected high-performance RESTful APIs and C# .NET background services for multi-tenant identity governance, reducing API latency by 42% and supporting 200,000+ monthly audit transactions.',
       'Redesigned monolithic backend components into C# microservices containerized with Docker and Kubernetes, reducing system downtime by 45% and enabling scalable deployment.',
       'Established automated testing suites spanning unit, integration, and regression coverage, reducing production software bugs by 65%.',
       'Led Git version-control workflows and design reviews across cross-functional Agile teams, cutting feature cycle delivery time by 2.5 weeks.',
     ],
-    tools: ['.NET 8', 'React', 'AWS Bedrock', 'RAG', 'PostgreSQL', 'Docker', 'Kubernetes'],
+    tools: ['.NET 8', 'Python', 'TypeScript', 'AWS Bedrock', 'Amazon Aurora', 'pgvector', 'Docker'],
   },
   {
     id: 'umass',

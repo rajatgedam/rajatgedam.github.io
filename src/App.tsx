@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Contact2, Download, FolderGit2, Menu, X } from 'lucide-react'
-import { BackgroundParticles } from './components/BackgroundParticles'
 import { Section } from './components/common/Section'
 import { AboutSection } from './components/sections/AboutSection'
 import { ExperienceSection } from './components/sections/ExperienceSection'
@@ -110,8 +109,6 @@ function App() {
 
   return (
     <div className="app-shell">
-      <BackgroundParticles />
-
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Go to home section">
           {profile.name}
@@ -171,36 +168,25 @@ function App() {
       <main>
         <Section id="home" className="hero-section">
           <motion.div className="hero-grid" {...fadeInUp}>
-            <div>
-              <p className="eyebrow">Software Engineer</p>
-              <h1>{profile.headline}</h1>
-              <p className="lead">{profile.intro}</p>
+            <p className="eyebrow">Software Engineer</p>
+            <h1>{profile.headline}</h1>
+            <p className="lead">{profile.intro}</p>
 
-              <div className="cta-row">
-                <a className="btn btn-primary" href="#projects">
-                  View Projects
-                </a>
-                <a className="btn btn-secondary" href={profile.resumeUrl}>
-                  <Download size={16} />
-                  Download Resume
-                </a>
-              </div>
-
-              <ul className="quick-facts">
-                {profile.quickFacts.map((fact) => (
-                  <li key={fact}>{fact}</li>
-                ))}
-              </ul>
+            <div className="cta-row">
+              <a className="btn btn-primary" href="#projects">
+                View Projects
+              </a>
+              <a className="btn btn-secondary" href={profile.resumeUrl}>
+                <Download size={16} />
+                Download Resume
+              </a>
             </div>
 
-            <div className="hero-illustration-wrap">
-              <img
-                src="/assets/illustrations/home-main.svg"
-                alt="Illustration representing software engineering and cloud development"
-                className="hero-illustration"
-                loading="eager"
-              />
-            </div>
+            <ul className="quick-facts">
+              {profile.quickFacts.map((fact) => (
+                <li key={fact}>{fact}</li>
+              ))}
+            </ul>
           </motion.div>
         </Section>
 
@@ -254,7 +240,7 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <p>Built with React, TypeScript, Vite, Tailwind, and Framer Motion.</p>
+        <p>Built with React, TypeScript, Vite, and Framer Motion.</p>
       </footer>
     </div>
   )

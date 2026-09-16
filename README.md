@@ -1,12 +1,8 @@
 # Rajat Gedam Portfolio
 
-Modern single-page portfolio for Rajat Gedam, built with React, TypeScript, and Vite, then deployed to GitHub Pages.
+Minimalist single-page portfolio for Rajat Gedam, built with React, TypeScript, and Vite, then deployed to GitHub Pages. Light theme, editorial typography (Space Grotesk display + IBM Plex Mono accents), one accent color, no illustrations or background animation.
 
 Live site: https://rajatgedam.github.io/
-
-## Preview
-
-![Portfolio hero preview](public/assets/illustrations/home-main.svg)
 
 ## Featured Work Preview
 
@@ -25,7 +21,8 @@ This repository contains the rebuilt portfolio site for Rajat Gedam. The previou
 The current site includes:
 
 - A responsive single-page layout with anchored navigation
-- Background particle animation with reduced-motion support
+- A minimalist light-theme design system: warm off-white background, near-black ink, a single indigo accent, hairline-bordered cards, no gradients or background animation
+- Swiss-poster-style section index numbers (01, 02, 03...) generated via CSS counters
 - Typed content modules for profile, experience, and projects
 - Resume download support from public assets
 - Archived project toggle for older work
@@ -37,7 +34,6 @@ The current site includes:
 - TypeScript 6
 - Vite 8
 - Framer Motion
-- tsParticles
 - Lucide React
 - ESLint with typescript-eslint
 - GitHub Actions for CI/CD
@@ -76,8 +72,8 @@ The site is intentionally data-driven. Most portfolio updates should be made in 
 The site currently reflects:
 
 - Updated professional summary aligned with the latest resume
-- Experience at Deloitte (Senior Software Engineer), University of Massachusetts, and Yardi Systems
-- AI Delivery Copilot and ResumeForge as current highlighted projects
+- Experience at Deloitte (Software Engineer), University of Massachusetts, and Yardi Systems
+- AI Delivery Copilot and ReadyCV as current highlighted projects
 - AI File Sorter and AI Chat Bot moved to archived projects behind a toggle
 - Resume asset exposed at `/assets/resume/RajatGedamResume.pdf`
 

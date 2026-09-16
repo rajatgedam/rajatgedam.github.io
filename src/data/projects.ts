@@ -5,16 +5,16 @@ export const projects: ProjectItem[] = [
     id: 'ai-delivery-copilot',
     title: 'AI Delivery Copilot',
     description:
-      'Production AI planning platform that converts product notes and repo context into sprint objectives, stories, and QA checklists with approval-gated exports, cutting plan-to-ticket turnaround by 70% and tripling sprint-ready artifact throughput.',
+      'Agentic planning workflow that reasons over product notes and repository context to plan and generate multi-step, schema-validated outputs — sprint objectives, user stories, QA checklists — with human-in-the-loop approval gates before export to production systems, cutting plan-to-ticket turnaround by 70% and tripling sprint-ready artifact throughput.',
     image: '/assets/projects/coming-soon.svg',
     repo: 'https://github.com/rajatgedam/ai-delivery-copilot',
     technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS Bedrock'],
   },
   {
-    id: 'resumeforge',
-    title: 'ResumeForge',
+    id: 'readycv',
+    title: 'ReadyCV',
     description:
-      'Retrieval-augmented resume-tailoring platform with ATS scoring and factuality-aware rewriting, cutting tailoring time from ~2 hours to under 20 minutes and improving keyword-match coverage by 35%.',
+      'Retrieval-augmented agentic pipeline that grounds LLM outputs in resume and job-description context, combining RAG retrieval, automated ATS-alignment scoring as an evaluation signal, and factuality-aware rewriting to reduce hallucination, cutting tailoring time from ~2 hours to under 20 minutes and improving keyword-match coverage by 35%.',
     image: '/assets/projects/coming-soon.svg',
     repo: 'https://github.com/rajatgedam/kuku',
     technologies: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'AWS Bedrock', 'RAG'],
