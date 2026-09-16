@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RG favicon">
 	<defs>
 		<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-			<stop offset="0%" stop-color="#07132b" />
-			<stop offset="100%" stop-color="#123565" />
+			<stop offset="0%" stop-color="#15140f" />
+			<stop offset="100%" stop-color="#3a2fef" />
 		</linearGradient>
 		<linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
-			<stop offset="0%" stop-color="#75a8ff" />
-			<stop offset="100%" stop-color="#75e1d5" />
+			<stop offset="0%" stop-color="#3a2fef" />
+			<stop offset="100%" stop-color="#d76a2c" />
 		</linearGradient>
 	</defs>
 
 	<rect x="3" y="3" width="58" height="58" rx="16" fill="url(#bg)" />
 	<rect x="3" y="3" width="58" height="58" rx="16" fill="none" stroke="url(#stroke)" stroke-width="2" />
 
-	<path d="M18 45 V19 H33 C39 19 42.5 22.5 42.5 27.4 C42.5 31.7 39.8 34.4 35.5 35 L43.5 45 H35.8 L28.9 35.8 H24.8 V45 Z M24.8 30.6 H31.6 C33.9 30.6 35.5 29.4 35.5 27.4 C35.5 25.3 34 24.2 31.7 24.2 H24.8 Z" fill="#e9f2ff" />
-	<path d="M39.6 43.5 C35.8 43.5 32.8 40.6 32.8 36.8 C32.8 33 35.8 30 39.6 30 C42.2 30 44.2 31.1 45.4 32.8 L41.5 35 C41.1 34.5 40.4 34.1 39.6 34.1 C38 34.1 36.8 35.4 36.8 36.8 C36.8 38.4 38 39.6 39.6 39.6 C40.8 39.6 41.9 39.1 42.8 38.2 V37.8 H39.4 V33.8 H47.8 V39.8 C45.9 42.2 43 43.5 39.6 43.5 Z" fill="#75e1d5" />
+	<path d="M18 45 V19 H33 C39 19 42.5 22.5 42.5 27.4 C42.5 31.7 39.8 34.4 35.5 35 L43.5 45 H35.8 L28.9 35.8 H24.8 V45 Z M24.8 30.6 H31.6 C33.9 30.6 35.5 29.4 35.5 27.4 C35.5 25.3 34 24.2 31.7 24.2 H24.8 Z" fill="#faf9f6" />
+	<path d="M39.6 43.5 C35.8 43.5 32.8 40.6 32.8 36.8 C32.8 33 35.8 30 39.6 30 C42.2 30 44.2 31.1 45.4 32.8 L41.5 35 C41.1 34.5 40.4 34.1 39.6 34.1 C38 34.1 36.8 35.4 36.8 36.8 C36.8 38.4 38 39.6 39.6 39.6 C40.8 39.6 41.9 39.1 42.8 38.2 V37.8 H39.4 V33.8 H47.8 V39.8 C45.9 42.2 43 43.5 39.6 43.5 Z" fill="#d76a2c" />
 </svg>
