@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Contact2, Download, FolderGit2, Menu, X } from 'lucide-react'
+import { Contact2, Download, FolderGit2, MapPin, Menu, X } from 'lucide-react'
+import { PhoenixIllustration } from './components/PhoenixIllustration'
 import { Section } from './components/common/Section'
 import { AboutSection } from './components/sections/AboutSection'
 import { ExperienceSection } from './components/sections/ExperienceSection'
@@ -167,27 +168,46 @@ function App() {
 
       <main>
         <Section id="home" className="hero-section">
-          <motion.div className="hero-grid" {...fadeInUp}>
-            <p className="eyebrow">Software Engineer</p>
-            <h1>{profile.headline}</h1>
-            <p className="lead">{profile.intro}</p>
+          <div className="hero-grid">
+            <motion.div className="hero-copy" {...fadeInUp}>
+              <p className="eyebrow">
+                <span>Software Engineer</span>
+                <span className="eyebrow-location">
+                  <MapPin size={12} />
+                  {profile.location}
+                </span>
+              </p>
+              <h1>{profile.headline}</h1>
+              <p className="lead">{profile.intro}</p>
 
-            <div className="cta-row">
-              <a className="btn btn-primary" href="#projects">
-                View Projects
-              </a>
-              <a className="btn btn-secondary" href={profile.resumeUrl}>
-                <Download size={16} />
-                Download Resume
-              </a>
-            </div>
+              <div className="cta-row">
+                <a className="btn btn-primary" href="#projects">
+                  View Projects
+                </a>
+                <a className="btn btn-secondary" href={profile.resumeUrl}>
+                  <Download size={16} />
+                  Download Resume
+                </a>
+              </div>
 
-            <ul className="quick-facts">
-              {profile.quickFacts.map((fact) => (
-                <li key={fact}>{fact}</li>
-              ))}
-            </ul>
-          </motion.div>
+              <ul className="quick-facts">
+                {profile.quickFacts.map((fact) => (
+                  <li key={fact}>{fact}</li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              className="phoenix-stage"
+              initial={{ opacity: 0, scale: 0.92 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              aria-hidden="true"
+            >
+              <div className="phoenix-glow" />
+              <PhoenixIllustration />
+            </motion.div>
+          </div>
         </Section>
 
         <AboutSection profile={profile} />

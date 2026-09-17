@@ -12,6 +12,7 @@ export interface SkillGroup {
 export interface Profile {
   name: string
   headline: string
+  location: string
   intro: string
   quickFacts: string[]
   summary: string[]
