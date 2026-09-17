@@ -4,6 +4,7 @@ export const projects: ProjectItem[] = [
   {
     id: 'ai-delivery-copilot',
     title: 'AI Delivery Copilot',
+    period: 'May 2026 - Sep 2026',
     description:
       'Agentic planning workflow that reasons over product notes and repository context to plan and generate multi-step, schema-validated outputs — sprint objectives, user stories, QA checklists — with human-in-the-loop approval gates before export to production systems, cutting plan-to-ticket turnaround by 70% and tripling sprint-ready artifact throughput.',
     image: '/assets/projects/coming-soon.svg',
@@ -13,6 +14,7 @@ export const projects: ProjectItem[] = [
   {
     id: 'readycv',
     title: 'ReadyCV',
+    period: 'Feb 2026 - Apr 2026',
     description:
       'Retrieval-augmented agentic pipeline that grounds LLM outputs in resume and job-description context, combining RAG retrieval, automated ATS-alignment scoring as an evaluation signal, and factuality-aware rewriting to reduce hallucination, cutting tailoring time from ~2 hours to under 20 minutes and improving keyword-match coverage by 35%.',
     image: '/assets/projects/coming-soon.svg',
