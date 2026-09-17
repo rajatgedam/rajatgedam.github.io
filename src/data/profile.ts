@@ -4,6 +4,7 @@ export const profile: Profile = {
   name: 'Rajat Gedam',
   headline: 'Software engineer building AI-powered, cloud-first products with .NET, React, and AWS Bedrock.',
   location: 'Phoenix, AZ',
+  githubUsername: 'rajatgedam',
   intro:
     '7+ years shipping enterprise and AI-powered products on C#/.NET 8, Python, TypeScript, and SQL, applying retrieval-augmented generation, LLM orchestration, and cloud-native architecture across AWS, Azure, and GCP as first-class delivery components.',
   quickFacts: [

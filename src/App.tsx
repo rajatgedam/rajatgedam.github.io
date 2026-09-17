@@ -5,6 +5,7 @@ import { Section } from './components/common/Section'
 import { AboutSection } from './components/sections/AboutSection'
 import { ExperienceSection } from './components/sections/ExperienceSection'
 import { FunSection } from './components/sections/FunSection'
+import { GithubActivitySection } from './components/sections/GithubActivitySection'
 import { ProjectsSection } from './components/sections/ProjectsSection'
 import { experience } from './data/experience'
 import { profile } from './data/profile'
@@ -17,6 +18,7 @@ const navItems = [
   { id: 'projects', label: 'Projects' },
   { id: 'fun', label: 'Fun' },
   { id: 'contact', label: 'Contact' },
+  { id: 'activity', label: 'Activity' },
 ]
 
 const fadeInUp = {
@@ -243,6 +245,8 @@ function App() {
             </div>
           </motion.div>
         </Section>
+
+        <GithubActivitySection username={profile.githubUsername} />
       </main>
 
       <footer className="site-footer">
