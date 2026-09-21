@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Contact2, Download, FolderGit2, MapPin, Menu, X } from 'lucide-react'
+import { BackgroundParticles } from './components/BackgroundParticles'
 import { Section } from './components/common/Section'
 import { AboutSection } from './components/sections/AboutSection'
 import { ExperienceSection } from './components/sections/ExperienceSection'
@@ -111,6 +112,8 @@ function App() {
 
   return (
     <div className="app-shell">
+      <BackgroundParticles />
+
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Go to home section">
           {profile.name}
