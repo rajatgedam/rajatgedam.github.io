@@ -36,6 +36,19 @@ body {
   background: var(--bg);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  /* Narrative/marketing copy is not selectable by default; explicitly
+     re-enabled below for experience, contact, and other recruiter-facing
+     facts (this is a soft deterrent only -- page source is still readable). */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.timeline-grid,
+#contact,
+.quick-facts,
+.skill-groups {
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 h1,

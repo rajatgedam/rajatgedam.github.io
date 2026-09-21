@@ -1,10 +1,12 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import type { Container } from '@tsparticles/engine'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 
 export function BackgroundParticles() {
   const [ready, setReady] = useState(false)
   const [reducedMotion, setReducedMotion] = useState(false)
+  const containerRef = useRef<Container | undefined>(undefined)
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -20,6 +22,33 @@ export function BackgroundParticles() {
     return () => media.removeEventListener('change', update)
   }, [])
 
+  // The particles layer is `pointer-events: none` (it must stay that way so
+  // it never blocks clicks on real page content, which visually covers it
+  // almost everywhere), so its own built-in click/hover detection never
+  // actually fires -- the page content wins hit-testing first. Instead,
+  // listen on window (which sees every click regardless of what handled it)
+  // and spawn a few particles at the click point via the public API.
+  useEffect(() => {
+    if (reducedMotion) {
+      return
+    }
+
+    const onClick = (event: MouseEvent) => {
+      const container = containerRef.current
+      if (!container) {
+        return
+      }
+      container.particles.push(4, {
+        position: { x: event.clientX, y: event.clientY },
+        clicking: true,
+        inside: true,
+      })
+    }
+
+    window.addEventListener('click', onClick)
+    return () => window.removeEventListener('click', onClick)
+  }, [reducedMotion])
+
   const options = useMemo(
     () => ({
       fullScreen: { enable: false },
@@ -30,6 +59,7 @@ export function BackgroundParticles() {
         number: {
           value: reducedMotion ? 30 : 110,
           density: { enable: true, area: 1000 },
+          limit: { value: 180, mode: 'delete' as const },
         },
         // Black dots and lines on the site's light background, rather than
         // the old dark-theme's colorful particles on navy.
@@ -81,5 +111,14 @@ export function BackgroundParticles() {
     return null
   }
 
-  return <Particles id="background-particles" className="particles-layer" options={options} />
+  return (
+    <Particles
+      id="background-particles"
+      className="particles-layer"
+      options={options}
+      particlesLoaded={async (container) => {
+        containerRef.current = container
+      }}
+    />
+  )
 }
