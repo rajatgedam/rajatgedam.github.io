@@ -14,7 +14,7 @@ export const profile: Profile = {
     'MS in Computer Science, University of Massachusetts (GPA 3.77/4)',
   ],
   summary: [
-    'At Deloitte, I built a RAG chatbot on AWS Bedrock so users get plain-language answers about pending tasks instead of manual lookups, using Python for retrieval, Amazon Aurora with pgvector for similarity search, and TypeScript/React for the front end, cutting related support tickets. I also re-architected multi-tenant identity governance services to cut API latency by 42% while supporting 200,000+ monthly audit transactions.',
+    'At Deloitte, I built a chatbot powered by Neo4j so users get plain-language answers about pending tasks instead of manual lookups, using TypeScript/React for the front end, cutting related support tickets. I also re-architected multi-tenant identity governance services to cut API latency by 42% while supporting 200,000+ monthly audit transactions.',
     'I led the shift from monolithic services to containerized C# microservices on Docker and Kubernetes, reducing downtime by 45%, and built automated test coverage that cut production bugs by 65%.',
     'At UMass, I built a TurboTax-style degree-tracking platform with React and .NET, integrated MongoDB alongside SQL Server for unstructured audit data, and automated advisor workflows to save 4+ hours per week.',
     'At Yardi, I refactored SaaS APIs in C# .NET to achieve 80% code reuse and cut latency from 50ms to 37.5ms, built full-stack applications on AWS for real estate data systems reaching 99.99% uptime, and automated legacy data migrations that saved 40+ hours per month.',
