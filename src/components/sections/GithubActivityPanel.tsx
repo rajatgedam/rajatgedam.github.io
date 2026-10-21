@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
 import { FolderGit2 } from 'lucide-react'
-import { GitHubCalendar, type Props as GitHubCalendarProps } from 'react-github-calendar'
-import 'react-github-calendar/tooltips.css'
+import { ActivityCalendar } from 'react-activity-calendar'
+import 'react-activity-calendar/tooltips.css'
+import activity from '../../data/github-activity.json'
+import { buildRollingData, calendarTheme } from '../../lib/activityData'
 
 interface GithubActivityPanelProps {
   username: string
@@ -14,37 +16,27 @@ const fadeInUp = {
   transition: { duration: 0.5 },
 }
 
-// A monochrome ramp built from the site's own accent color instead of
-// GitHub's default green, so the calendar reads as part of this design
-// system rather than a bolted-on widget.
-const calendarTheme = {
-  light: ['#f2f0ea', '#cec6f7', '#9c86f2', '#6a4bee', '#3a2fef'],
-}
-
-// The component fetches a rolling last-12-months dataset by default; slice
-// that down to a rolling last-6-months window using real date arithmetic
-// (rather than comparing calendar-year month indices, which breaks across
-// a year boundary) so this stays correct no matter when the page loads.
-const selectLastSixMonths: GitHubCalendarProps['transformData'] = (contributions) => {
-  const cutoff = new Date()
-  cutoff.setMonth(cutoff.getMonth() - 6)
-  return contributions.filter((activity) => new Date(activity.date) >= cutoff)
-}
-
+// Data comes from github-activity.json (public contributions plus commits in
+// private repos), refreshed by `npm run activity:update`.
 export function GithubActivityPanel({ username }: GithubActivityPanelProps) {
+  const { data, total } = buildRollingData(activity.days, 6)
+
   return (
     <motion.div className="panel github-activity" {...fadeInUp}>
       <div className="github-activity-calendar">
-        <GitHubCalendar
-          username={username}
+        <ActivityCalendar
+          data={data}
           colorScheme="light"
           theme={calendarTheme}
           fontSize={13}
           blockSize={11}
           blockMargin={4}
-          transformData={selectLastSixMonths}
-          labels={{ totalCount: '{{count}} contributions in the last 6 months' }}
-          errorMessage="Couldn't load GitHub activity right now."
+          labels={{ totalCount: `${total} contributions in the last 6 months` }}
+          tooltips={{
+            activity: {
+              text: (a) => `${a.count} contribution${a.count === 1 ? '' : 's'} on ${a.date}`,
+            },
+          }}
         />
       </div>
       <a

@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    "claude:export": "node scripts/update-claude-usage.mjs --no-deploy",
-    "claude:update": "node scripts/update-claude-usage.mjs"
+    "activity:export": "node scripts/update-activity.mjs --no-deploy",
+    "activity:update": "node scripts/update-activity.mjs"
   },
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
@@ -21,8 +21,7 @@
     "lucide-react": "^1.14.0",
     "react": "^19.2.5",
     "react-activity-calendar": "^3.2.1",
-    "react-dom": "^19.2.5",
-    "react-github-calendar": "^5.0.9"
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
     "@emnapi/core": "^1.10.0",
