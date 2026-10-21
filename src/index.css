@@ -502,6 +502,35 @@ main {
   justify-items: start;
 }
 
+.activity-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.activity-column {
+  min-width: 0;
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.activity-heading {
+  font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.activity-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ink-muted);
+  font-size: 0.84rem;
+}
+
 .github-activity-calendar {
   width: 100%;
   overflow-x: auto;
@@ -691,6 +720,10 @@ main {
   .fun-grid {
     grid-template-columns: 1.2fr 0.8fr;
     align-items: start;
+  }
+
+  .activity-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .timeline-grid,

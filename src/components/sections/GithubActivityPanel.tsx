@@ -2,9 +2,8 @@ import { motion } from 'framer-motion'
 import { FolderGit2 } from 'lucide-react'
 import { GitHubCalendar, type Props as GitHubCalendarProps } from 'react-github-calendar'
 import 'react-github-calendar/tooltips.css'
-import { Section } from '../common/Section'
 
-interface GithubActivitySectionProps {
+interface GithubActivityPanelProps {
   username: string
 }
 
@@ -32,33 +31,31 @@ const selectLastSixMonths: GitHubCalendarProps['transformData'] = (contributions
   return contributions.filter((activity) => new Date(activity.date) >= cutoff)
 }
 
-export function GithubActivitySection({ username }: GithubActivitySectionProps) {
+export function GithubActivityPanel({ username }: GithubActivityPanelProps) {
   return (
-    <Section id="activity" kicker="Activity" title="GitHub contributions">
-      <motion.div className="panel github-activity" {...fadeInUp}>
-        <div className="github-activity-calendar">
-          <GitHubCalendar
-            username={username}
-            colorScheme="light"
-            theme={calendarTheme}
-            fontSize={13}
-            blockSize={11}
-            blockMargin={4}
-            transformData={selectLastSixMonths}
-            labels={{ totalCount: '{{count}} contributions in the last 6 months' }}
-            errorMessage="Couldn't load GitHub activity right now."
-          />
-        </div>
-        <a
-          className="project-link"
-          href={`https://github.com/${username}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FolderGit2 size={16} />
-          View full profile on GitHub
-        </a>
-      </motion.div>
-    </Section>
+    <motion.div className="panel github-activity" {...fadeInUp}>
+      <div className="github-activity-calendar">
+        <GitHubCalendar
+          username={username}
+          colorScheme="light"
+          theme={calendarTheme}
+          fontSize={13}
+          blockSize={11}
+          blockMargin={4}
+          transformData={selectLastSixMonths}
+          labels={{ totalCount: '{{count}} contributions in the last 6 months' }}
+          errorMessage="Couldn't load GitHub activity right now."
+        />
+      </div>
+      <a
+        className="project-link"
+        href={`https://github.com/${username}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FolderGit2 size={16} />
+        View full profile on GitHub
+      </a>
+    </motion.div>
   )
 }
